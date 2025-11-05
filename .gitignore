@@ -39,11 +39,14 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# SEGY data files
+# SEGY data files (except sample files)
 *.segy
 *.sgy
 *.SGY
 *.SEGY
+# Allow sample files
+!mini_sample*.segy
+!sample_data/*.segy
 
 # Output directories
 output_chunks/

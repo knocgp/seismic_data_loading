@@ -311,11 +311,42 @@ with SEGYDataLoader('your_file.segy') as loader:
 
 ## 예제 데이터
 
-예제 SEGY 파일이 없다면 다음 소스에서 다운로드할 수 있습니다:
+### 포함된 샘플 파일
+
+이 저장소에는 테스트용 미니 SEGY 샘플이 포함되어 있습니다:
+
+- **mini_sample.segy** (65KB) - 50 트레이스 × 250 샘플
+  - 합성 지진 데이터 (사인파 + 노이즈)
+  - 테스트 및 학습용
+
+샘플 파일 사용:
+```python
+# GitHub에서 직접 다운로드
+!wget https://github.com/knocgp/seismic_data_loading/raw/main/mini_sample.segy
+
+# 또는 저장소 클론 후 사용
+from header_loading import SEGYHeaderLoader
+loader = SEGYHeaderLoader('mini_sample.segy')
+```
+
+### 추가 샘플 생성
+
+```bash
+# 다양한 크기의 샘플 생성
+python create_sample_segy.py --multiple
+
+# 커스텀 샘플 생성
+python create_sample_segy.py my_sample.segy 100 500
+```
+
+### 공개 SEGY 데이터
+
+실제 지진 데이터가 필요하다면 다음 소스를 참고하세요:
 
 - [SEG Wiki](https://wiki.seg.org/wiki/Open_data)
 - [Open Seismic Repository](https://opendtect.org/osr/)
 - [USGS Data](https://www.usgs.gov/)
+- [Equinor Volve Dataset](https://www.equinor.com/energy/volve-data-sharing)
 
 ## 문제 해결
 
