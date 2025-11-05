@@ -1,6 +1,29 @@
 # SEGY File Processing Tools
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/knocgp/seismic_data_loading/blob/main/quickstart_colab.ipynb)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/knocgp/seismic_data_loading)
+[![Python](https://img.shields.io/badge/Python-3.7+-blue?logo=python)](https://www.python.org/)
+
 SEG-Y 형식의 지진 데이터를 로드, 분석, 분할, 시각화하는 Python 도구 모음입니다.
+
+## 🚀 빠른 시작
+
+### Google Colab에서 바로 사용하기 (권장)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/knocgp/seismic_data_loading/blob/main/quickstart_colab.ipynb)
+
+위 버튼을 클릭하면 **설치 없이** 바로 사용할 수 있습니다!
+
+- ✅ 환경 설정 자동화
+- ✅ Google Drive 연동
+- ✅ 단계별 가이드
+- ✅ 즉시 시각화
+
+### 튜토리얼 노트북
+
+- **빠른 시작**: [`quickstart_colab.ipynb`](https://colab.research.google.com/github/knocgp/seismic_data_loading/blob/main/quickstart_colab.ipynb) - Colab에서 바로 실행
+- **전체 튜토리얼**: [`segy_processing_tutorial.ipynb`](https://colab.research.google.com/github/knocgp/seismic_data_loading/blob/main/segy_processing_tutorial.ipynb) - 상세한 예제 포함
+- **Colab 가이드**: [`COLAB_GUIDE.md`](COLAB_GUIDE.md) - Drive 연동 및 사용법
 
 ## 주요 기능
 
